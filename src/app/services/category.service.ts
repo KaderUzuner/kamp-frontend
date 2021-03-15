@@ -10,6 +10,7 @@ import { Category } from '../models/category';
 export class CategoryService {
 
   apiUrl="https://localhost:44353/api/categories/getall";
+
   
   constructor(private httpClient:HttpClient) { }
  
