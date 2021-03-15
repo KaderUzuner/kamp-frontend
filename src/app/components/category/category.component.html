@@ -1,5 +1,7 @@
 <ul class="list-group">
-    <li (click)="setCurrentCategory(category)" *ngFor="let category of categories" 
+    <li (click)="setCurrentCategory(category)" 
+    routherLink="/products/category/{{category.categoryId}}"
+    *ngFor="let category of categories" 
     [class]="getCurrentCategoryClass">{{category.categoryName}}</li>
     
 </ul>
